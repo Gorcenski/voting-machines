@@ -3,6 +3,72 @@ A repo for exploring the software quality of electronic voting machines
 
 This repository provides a breakdown of the software validation process as performed to certify electronic voting equipment. Each device's Certificate of Conformance and Final Test Report are included in the appropriate folder, organized by manufacturer. These reports are provided for convenience; copyright on these documents remains unchanged, and no guarantee is made that these documents are current.
 
+## Voting Machines and Quality Assurance
+
+Unlike several failure-intolerant devices, there is _no codified set of federal regulations_ governing the quality of electronic voting machines. There are, however, federally-recognized certification standards and federally-accredited testing facilities. Nonetheless, we require some commentary on this. Certification is voluntary for manufacturers; a handful of states have state-level regulations mandating federal certification. More on this later.
+
+#### The difference between Certification and Regulation
+
+Generally speaking, certification programs are a quality assurance process that ensures manufacturers adhere to certain guidelines regarding design, safety, accuracy, fault tolerance, etc. Certifications can be used to satisfy regulations; however, legislatively-empowered regulations have more bite to them, and can carry civil and criminal penalties for non-compliance. Voting system regulations are delegated to the state level, and while election tampering remains a crime, certification programs are poorly equipped to catch deliberate design flaws.
+
+#### Does my state regulate voting machines?
+
+[This report](https://www.eac.gov/assets/1/Page/State%20Requirements%20and%20the%20Federal%20Voting%20System%20Testing%20and%20Certification%20Program.pdf) contains all you need to know, but I'll try to summarize things here.
+
+| State | Reguations Required |
+| ----- | ------------------- |
+| AL    | Testing by Federally Accredited Laboratory |
+| AK    | No requirements |
+| AZ    | Testing by Federally Accredited Laboratory |
+| AR    | No requirements |
+| CA    | Federal Certification |
+| CO    | Federal Certification |
+| CT    | Testing to Federal Standards |
+| DE    | Federal Certification |
+| DC    | Testing to Federal Standards |
+| FL    | No requirements |
+| GA    | Federal Certification |
+| HI    | No requirements |
+| ID    | Federal Certification |
+| IL    | Testing by Federally Accredited Laboratory |
+| IN    | Testing to Federal Standards |
+| IA    | Testing by Federally Accredited Laboratory |
+| KS    | No requirements |
+| KY    | Testing to Federal Standards |
+| LA    | Testing by Federally Accredited Laboratory |
+| ME    | No requirements |
+| MD    | Testing by Federally Accredited Laboratory |
+| MA    | Testing by Federally Accredited Laboratory |
+| MI    | No requirements |
+| MN    | Testing to Federal Standards |
+| MS    | No requirements |
+| MO    | Testing by Federally Accredited Laboratory |
+| MT    | No requirements |
+| NE    | No requirements |
+| NV    | Testing to Federal Standards |
+| NH    | No requirements |
+| NJ    | No requirements |
+| NM    | Testing by Federally Accredited Laboratory |
+| NY    | Testing to Federal Standards |
+| NC    | Federal Certification |
+| ND    | Federal Certification |
+| OH    | Federal Certification |
+| OK    | No requirements |
+| OR    | Testing to Federal Standards |
+| PA    | Testing by Federally Accredited Laboratory |
+| RI    | Testing by Federally Accredited Laboratory |
+| SC    | Federal Certification |
+| SD    | Federal Certification |
+| TN    | No requirements |
+| TX    | Testing to Federal Standards |
+| UT    | Testing by Federally Accredited Laboratory |
+| VT    | No requirements |
+| VA    | Testing to Federal Standards |
+| WA    | Federal Certification |
+| WV    | No requirements |
+| WI    | Testing by Federally Accredited Laboratory |
+| WY    | Federal Certification |
+
 ## A Summary of the Software Review Process for all Certified Electronic Voting Systems
 
 The comments here are not consistent per se; they are the nearest brief synopsis of the test procedure described in the Source Code Review section of the test reports.
