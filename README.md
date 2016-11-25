@@ -69,11 +69,28 @@ Generally speaking, certification programs are a quality assurance process that 
 | WI    | Testing by Federally Accredited Laboratory |
 | WY    | Federal Certification |
 
+#### About Accredited Laboratories
+
+There are two pathways to becoming an accredited laboratory, according to [the Voting System Test Laboratories page](https://www.eac.gov/testing_and_certification/laboratory_accreditation.aspx) on the EAC website:
+
+1. Fulfill NIST requirements pursuant to the Help America Vote Act of 2002 (42 USC §15371(b), Section 231(b));
+2. Obtain a waiver from the EAC after explaining why you're so awesome.
+
+According to [the NIST Voluntary Laboratory Accreditation Program database](https://www-s.nist.gov/niws/index.cfm?event=directory.search#no-back), there are three accredited Voting System Laboratories. (Under "Program" select "Voting System Testing", and under "Country" select "United States").
+
+These are:
+
+- SLI Compliance, formerly SLI Global Solutions
+- National Technical Systems (NTS) Huntsville Operations, formerly Wyle Labs
+- Pro V&V
+
+In the summary of certified voting systems, another laboratory appears: iBeta Quality Assurance; however, it seems as though they stopped performing voting system testing somewhere around 2009.
+
 ## A Summary of the Software Review Process for all Certified Electronic Voting Systems
 
 The comments here are not consistent per se; they are the nearest brief synopsis of the test procedure described in the Source Code Review section of the test reports.
 
-This information is public and can be found on [the Testing and Certification Program page](https://www.eac.gov/testing_and_certification/default.aspx) of [the Election Assistance Commission's website](https://www.eac.gov/default.aspx).
+This information is public and can be found on [the Testing and Certification Program page](https://www.eac.gov/testing_and_certification/default.aspx) of [the Election Assistance Commission's website](https://www.eac.gov/default.aspx). The Test Labs listed below use their current names, e.g. where the Certificate might say "Wyle Laboratories," this is now NTS Huntsville and is represented as such.
 
 | Manufacturer | Device Name            | Standard  | Test Lab                | Certification Date | Software Review Comments                                        |
 |--------------|------------------------|-----------|-------------------------|--------------------|-----------------------------------------------------------------|
