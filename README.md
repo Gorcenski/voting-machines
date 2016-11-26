@@ -3,6 +3,8 @@ A repo for exploring the software quality of electronic voting machines
 
 This repository provides a breakdown of the software validation process as performed to certify electronic voting equipment. Each device's Certificate of Conformance and Final Test Report are included in the appropriate folder, organized by manufacturer. These reports are public records available through [the Election Assistance Commission's website](https://www.eac.gov/default.aspx) and are only provided for convenience; copyright on these documents belongs to the original holders, and no guarantee is made that these documents are current.
 
+[Skip to the good stuff](a-summary-of-the-software-review-process-for-all-certified-electronic-voting-systems)
+
 ## Voting Machines and Quality Assurance
 
 Unlike several failure-intolerant devices, there is _no codified set of federal regulations_ governing the quality of electronic voting machines. There are, however, federally-recognized certification standards and federally-accredited testing facilities. Nonetheless, we require some commentary on this. Certification is voluntary for manufacturers; a handful of states have state-level regulations mandating federal certification. More on this later.
