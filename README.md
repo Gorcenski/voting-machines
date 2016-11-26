@@ -22,9 +22,9 @@ The certification program effectively _only_ looks at code style. Furthermore, m
 For instance, consider this block of pseudocode:
 
 ```C#
-if (numVotesRecorded > 1000)
+if (vote.Candidate == "Smith")
 {
-    if (vote.Candidate == "Smith")
+    if (numVotesRecorded > 1000)
         votes["Smith"] += 2;
     else
         votes["Smith"] += 1;
