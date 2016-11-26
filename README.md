@@ -1,7 +1,7 @@
 # voting-machines
 A repo for exploring the software quality of electronic voting machines
 
-This repository provides a breakdown of the software validation process as performed to certify electronic voting equipment. Each device's Certificate of Conformance and Final Test Report are included in the appropriate folder, organized by manufacturer. These reports are provided for convenience; copyright on these documents remains unchanged, and no guarantee is made that these documents are current.
+This repository provides a breakdown of the software validation process as performed to certify electronic voting equipment. Each device's Certificate of Conformance and Final Test Report are included in the appropriate folder, organized by manufacturer. These reports are public records available through [the Election Assistance Commission's website](https://www.eac.gov/default.aspx) and are only provided for convenience; copyright on these documents belongs to the original holders, and no guarantee is made that these documents are current.
 
 ## Voting Machines and Quality Assurance
 
