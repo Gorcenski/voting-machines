@@ -9,6 +9,34 @@ This repository provides a breakdown of the software validation process as perfo
 
 Unlike several failure-intolerant devices, there is _no codified set of federal regulations_ governing the quality of electronic voting machines. There are, however, federally-recognized certification standards and federally-accredited testing facilities. Nonetheless, we require some commentary on this. Certification is voluntary for manufacturers; a handful of states have state-level regulations mandating federal certification. More on this later.
 
+#### Non-technical Summary
+
+Voting machines have a lot of components that need to be tested. Electrical systems, physical cases, security locks, scanners, speakers, and all that stuff has to meet certain engineering quality standards. Certification bodies exist to test these machines. However, software is a more mysterious being. Software verification is _very hard_; in fact, it's one of the hardest problems out there. Software can introduce lots of failures: it can change a vote, it can count a vote twice or not at all, it can lose votes. So one would expect that voting machine software is thoroughly checked and ensured that the answer it outputs is always the correct answer.
+
+My findings indicate that this is not the case.
+
+The software standards for voting machines mostly govern _code style_. Code style is about how the code is presented, and truly it is very important. However, code style is form, not function; it doesn't change how the code runs, just how humans read it. Some formatting problems can include things like "how long is this line?" or "is this line properly indented?"
+
+The certification program effectively _only_ looks at code style. Furthermore, most of the style review was performed by automated tools, not humans. This means that backdoors or other attempts at deliberate malfeasance can be easy to sneak into the software, and it's possible that they won't be caught during the functionality testing portion of certification.
+
+For instance, consider this block of pseudocode:
+
+```C#
+if (numVotesRecorded > 1000)
+{
+    if (vote.Candidate == "Smith")
+        votes["Smith"] += 2;
+    else
+        votes["Smith"] += 1;
+}
+```
+
+In such a case, votes for Candidate Smith get double-counted only when the machine has recorded at least 1000 votes. This would not get caught during an automated style review.
+
+Most of the human-review steps only covered a small fraction of the code, and of those human reviews, most of the review focused only on _comments_, sections of the code used to explain what happens but isn't actually execued by the machine. Therefore, it's easy for a developer to sneak in subtle, obscure flaws.
+
+Another problem here is that style formatting is a solved problem. Tools known as _code linters_ can solve all the problems that these certification reviews bring up. Modern software development tools can flag the developer as they go; if manufacturers are submitting code for review with these flaws, it means they haven't integrated these tools into their workflows. Given how easy they are to set up, this is a concern. It suggests that there is poor institutional control over source code.
+
 #### The difference between Certification and Regulation
 
 Generally speaking, certification programs are a quality assurance process that ensures manufacturers adhere to certain guidelines regarding design, safety, accuracy, fault tolerance, etc. Certifications can be used to satisfy regulations; however, legislatively-empowered regulations have more bite to them, and can carry civil and criminal penalties for non-compliance. Voting system regulations are delegated to the state level, and while election tampering remains a crime, certification programs are poorly equipped to catch deliberate design flaws.
