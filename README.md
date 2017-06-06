@@ -45,7 +45,7 @@ Generally speaking, certification programs are a quality assurance process that 
 
 [This report](https://www.eac.gov/assets/1/Page/State%20Requirements%20and%20the%20Federal%20Voting%20System%20Testing%20and%20Certification%20Program.pdf) contains all you need to know, but I'll try to summarize things here.
 
-| State | Reguations Required |
+| State | Regulations Required |
 | ----- | ------------------- |
 | AL    | Testing by Federally Accredited Laboratory |
 | AK    | No requirements |
